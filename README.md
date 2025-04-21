@@ -23,3 +23,7 @@ pnpm dev
 
 ## Unit & ssnapshot tests
 
+```sh
+pnpm test
+```
+
