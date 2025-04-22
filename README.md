@@ -27,3 +27,7 @@ pnpm dev
 pnpm test
 ```
 
+## Integrating React testing
+
+
+
