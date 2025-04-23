@@ -1,4 +1,4 @@
-export interface Fruit {
+export type Fruit = {
   name: string;
   id: number;
   family: string;
@@ -11,9 +11,9 @@ export interface Fruit {
     protein: number;
     sugar: number;
   };
-}
+};
 
-async function loadFruit(name: string): Promise<Fruit | undefined> {
+export async function loadFruit(name: string): Promise<Fruit | undefined> {
   const fruits: Fruit[] = [
     {
       name: "strawberry",
@@ -75,9 +75,9 @@ async function loadFruit(name: string): Promise<Fruit | undefined> {
 
   return fruits.find((fruit: Fruit) => fruit.name === name);
 }
+
 export async function Fruits(name: string): Promise<Fruit | undefined> {
   const fruit = await loadFruit(name);
-
   if (!fruit) {
     return;
   }

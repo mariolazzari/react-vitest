@@ -29,5 +29,8 @@ pnpm test
 
 ## Integrating React testing
 
+## Integration tests
 
-
+- Unit test: tests single feature in isolation
+- Integration test: validates integrations between multiple tests
+- Integrations tests sit between unit test and end to end test
